@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+.font-title {
+  font-family : "Playfair Display", serif;
+  font-weight : 600;
+}
+
+.font-subtitle {
+  font-family : "Playfair Display", serif;
+  weight : 400;
+}
+
+.matrix-text {
+  text-shadow: 0 0 5px #B051EE, 0 0 5px #B051EE, 0 0 10px #B051EE;
+}
+
+.matrix-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: glitch 2s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-2px, -2px);
+  color: #B051EE;
+  text-shadow: 0 0 5px #B051EE, 0 0 15px #B051EE;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(0);
+  }
+  33% {
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
+    transform: translate(-5px, -5px);
+  }
+  66% {
+    clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+    transform: translate(5px, 5px);
+  }
+}
+
+.typewrite {
+  --caret : currentcolor;
+}
+
+.typewrite::before {
+  content : "";
+  animation : typing 2.5s;
+  animation-fill-mode : forwards;
+}
+
+.typewrite::after {
+  content : " ";
+  border-right : 1px solid var(--caret);
+  animation : blink 0.5s linear infinite;
+}
+
+.typewrite.thick::after {
+  border-right : 1ch solid var(--caret);
+}
+
+@keyframes typing {
+  0% { content: ""; }
+  5% { content: "F"; }
+  10% { content: "Fu"; }
+  15% { content: "Ful"; }
+  20% { content: "Full"; }
+  25% { content: "Full "; }
+  30% { content: "Full S"; }
+  35% { content: "Full St"; }
+  40% { content: "Full Sta"; }
+  45% { content: "Full Stac"; }
+  50% { content: "Full Stack"; }
+  55% { content: "Full Stack "; }
+  60% { content: "Full Stack D"; }
+  65% { content: "Full Stack De"; }
+  70% { content: "Full Stack Dev"; }
+  75% { content: "Full Stack Deve"; }
+  80% { content: "Full Stack Devel"; }
+  85% { content: "Full Stack Develo"; }
+  90% { content: "Full Stack Develop"; }
+  95% { content: "Full Stack Develope"; }
+  100% { content: "Full Stack Developer"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.montserrat {
+  font-family : "Montserrat", sans-serif;
+}
