@@ -8,7 +8,7 @@ let Home = () =>
                 <div className='flex flex-row justify-center gap-8'>
                   <a href='/document/FCV_EN.pdf' download>
                     <div className="flex items-center gap-4 group w-fit group-hover:scale-105">
-                      <img src="/img/CVLogo.png" alt="CV Logo" className="max-w-10 max-h-10 lg:max-w-18 lg:max-h-18 cursor-pointer transition-transform duration-300"/>
+                      <img src="/img/CVLogo.png" alt="CV Logo" className="max-w-10 max-h-10 lg:max-w-18 lg:max-h-18 cursor-pointer"/>
                       <h1 className="overflow-hidden whitespace-nowrap max-w-0 group-hover:max-w-[200px] opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out text-[#B051EE] font-bold montserrat text-xl cursor-pointer">Download Resume</h1>
                     </div>
                   </a>

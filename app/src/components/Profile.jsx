@@ -21,7 +21,7 @@ let Profile = () =>
 
     return (
         <div className='flex h-screen w-full'>
-            <div className='flex h-full w-1/2 box-border items-center'>
+            <div className='flex h-full w-1/2 box-border items-center justify-center'>
                 <div ref={ref} className={`${isProfileVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} transition-opacity duration-1000 ease-in-out flex flex-col h-min m-16 bg-[#0c041c] rounded-2xl p-8 gap-4`}>
                     <div className='flex flex-row w-full gap-4 items-center'>
                         <img className='h-8 w-8' src='/img/JSONLogo.png' />
