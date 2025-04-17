@@ -2,6 +2,7 @@ import './App.css'
 import Home from './components/Home'
 import Profile from './components/Profile'
 import Career from './components/Career'
+import Competences from './components/Competences'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <Profile />
         <Career />
+        <Competences />
       </div>
     </>
     
