@@ -42,7 +42,7 @@ let Competences = () =>
       };
 
     return (
-        <div className='flex flex-col h-screen w-full p-16'>
+        <div className='flex flex-col h-screen w-full p-16 '>
             <div className='flex h-1/3 w-full'>
                 <Carousel
                     className='h-full w-full'
@@ -64,7 +64,7 @@ let Competences = () =>
                     <CarouselItem logo='/img/GoLogo.png' text='Go'/>
                 </Carousel>
             </div>
-            <div className='flex h-1/3 w-full '>
+            <div className='flex h-1/3 w-full'>
                 <Carousel
                     className='h-full w-full'
                     responsive={responsiveRevert}
@@ -91,7 +91,7 @@ let Competences = () =>
                     draggable={true}
                     infinite={true}
                     autoPlay={true}
-                    autoPlaySpeed={3000}
+                    autoPlaySpeed={3500}
                     removeArrowOnDeviceType={["tablet" , "desktop" , "mobile"]} >
                     <CarouselItem logo='/img/GitLogo.png' text='Git'/>
                     <CarouselItem logo='/img/SQLLogo.png' text='SQL'/>
@@ -99,7 +99,7 @@ let Competences = () =>
                     <CarouselItem logo='/img/DockerLogo.png' text='Docker'/>
                     <CarouselItem logo='/img/ShadcnUILogo.png' text='ShadcnUI'/>
                     <CarouselItem logo='/img/TailwindLogo.png' text='Tailwind'/>
-                    <CarouselItem logo='/img/SCLogo.png' text='Styled Components'/>
+                    <CarouselItem logo='/img/SCLogo.png' text='SC'/>
                     <CarouselItem logo='/img/JiraLogo.png' text='Jira'/>
                     <CarouselItem logo='/img/PostmanLogo.png' text='Postman'/>
                     <CarouselItem logo='/img/KubernetesLogo.png' text='Kubernetes'/>
