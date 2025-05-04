@@ -99,3 +99,22 @@
 .firacode {
   font-family : "Fira Code", monospace;
 }
+
+.custom-scroll::-webkit-scrollbar {
+  width : 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #B051EE;
+  border-radius : 100px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background : #FF5E8A;
+  cursor : pointer;
+}
