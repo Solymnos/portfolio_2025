@@ -3,7 +3,7 @@ import CareerItem from './CareerItem';
 let Career = () =>
 {
     return (
-        <div className='flex flex-col lg:flex-row w-full gap-8 lg:gap-0 p-8 lg:p-0'>
+        <div className='flex flex-col lg:flex-row lg:h-screen w-full gap-8 lg:gap-0 p-8 lg:p-0'>
             <CareerItem type='diploma' place='Jouè-les-Tours' date='2015' title='Bachelor' data='Engineering'/>
             <CareerItem type='diploma' place='Blois' date='2015-2017' title='Technological University Degree' data='Network and Telecommunication' />
             <CareerItem type='job' place='Tours' date='2017' title='Intership' data='BMS37'/>

@@ -18,8 +18,8 @@ function App() {
         <Profile />
         <Career />
         <Competences />
+        <Projects />
         {/*
-        <Competences />
         <Projects />
         <Contact />
         <Footer />*/}
