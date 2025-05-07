@@ -3,7 +3,7 @@ let ProjectItem = ({item, selectedId, selectProject}) =>
     if (selectedId == -1)
     {
         return (
-            <div className="p-8 w-1/2 h-full">
+            <div className="p-4 lg:p-8 w-full lg:w-1/2 h-full">
                 <div onClick={() => selectProject(item.id)} className="hover:border-[#FF5E8A] cursor-pointer p-8 flex flex-row  justify-between border-2 border-[#B051EE] w-full min-h-3 rounded-4xl">
                     <div className="flex flex-col">
                         <h1 className="montserrat font-bold text-white text-4xl">{item.name}</h1>
